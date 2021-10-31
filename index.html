@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="C:\Users\user\Desktop\MISH\FrontEnd Mentor\SocialMediaDashBoard\fontawesome-free-5.14.0-web\css\all.min.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+</head>
+
+<body id="body">
+    <div class="container">
+        <p class="heading" id="heading">spli<br />tter</p>
+        <!-- <div class="toggle" id="toggle">
+            <i class="fa fa-toggle-off" id="dark">Dark Mode</i>
+            <i class="fa fa-toggle-on" id="light" aria-hidden="true">Light Mode</i>
+        </div> -->
+        <div class="container_small" id="small">
+            <div class="white">
+                <p>Bill</p>
+                <div class="input">
+                    <img src="./images/icon-dollar.svg" alt="" srcset="" />
+                    <input type="text" name="amount" id="amount" pattern=" [1-9] +" onfocus="this.value=''" />
+                </div>
+                <p>Select Tip %</p>
+                <div id="tip_button">
+                    <button class="tip" value="5">5&#37;</button>
+                    <button class="tip" value="10">10&#37;</button>
+                    <button class="tip" value="15">15&#37;</button>
+                    <br />
+                    <button class="tip" value="25">25&#37;</button>
+                    <button class="tip" value="50">50&#37;</button>
+                    <button class="tip"><input type="tel" class="btn-input" id="custom" placeholder="Custom" oninput="calc()" /></button>
+                </div>
+                <p>number of people</p>
+                <div class="input" id="input">
+                    <img src="./images/icon-person.svg" alt="" srcset="" />
+                    <input type="text" name="peeple" id="people" onfocus="this.value=''" />
+                </div>
+            </div>
+            <div class="color">
+                <div class="tip_amount">
+                    <p>Tip Amount <br />/ person</p>
+                    <div class="box-1">
+                        <span>
+                            <img src="./images/icon-dollar.svg" alt="" srcset="">
+                        </span>
+                        <span id="total_amount">0.00</span>
+                    </div>
+                </div>
+                <div class="tip_total">
+                    <p>Total <br />/ person</p>
+                    <div class="box-2">
+                        <span>
+                            <img src="./images/icon-dollar.svg" alt="" srcset="">
+                        </span>
+                        <span id="total_person">0.00</span>
+                    </div>
+                </div>
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">D_Codes</a>.
+    </div>
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>

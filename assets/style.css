@@ -1,0 +1,278 @@
+body {
+  background: hsl(189, 41%, 84%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* 
+.container {
+  display: block;
+  margin: 100px 200px;
+} */
+
+.container .heading {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 50px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 500;
+}
+.toggle {
+  position: fixed;
+  top: 70px;
+  margin-top: 20px;
+  font-size: 25px;
+  right: 70px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#light {
+  display: none;
+}
+
+.container_small {
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  width: 600px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.white p {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: hsl(183, 100%, 15%);
+  font-size: 11px;
+}
+
+.white .input {
+  margin-bottom: 20px;
+}
+
+.white,
+.color {
+  width: 45%;
+}
+
+.color {
+  background: hsl(183, 100%, 15%);
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  background: hsl(189, 41%, 97%);
+  height: 30px;
+  cursor: pointer;
+}
+
+.input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+  height: 28px;
+}
+
+.input img {
+  color: hsl(189, 41%, 84%);
+  height: 15px;
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+.input input {
+  border: none;
+  outline: none;
+  background: none;
+  text-align: right;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+
+#tip_button {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tip {
+  width: 80px;
+  padding: 7px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active,
+.tip:hover {
+  color: hsl(183, 100%, 15%);
+  background: hsl(172, 67%, 45%);
+}
+.tip:last-child {
+  width: 80px;
+  height: 30px;
+  text-align: right;
+  background: hsl(189, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.tip:last-child .btn-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 20px auto;
+  text-align: center;
+}
+.tip:last-child .btn-input::placeholder {
+  text-align: center;
+  font-weight: 600;
+}
+#tip_button .tip:last-child:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.tip_amount,
+.tip_total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip_amount p,
+.tip_total p {
+  color: hsl(189, 41%, 97%);
+  font-size: 13px;
+  word-spacing: 5px;
+}
+
+.tip_amount span,
+.tip_total span {
+  margin-top: 15px;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip_amount .box-1,
+.tip_total .box-2 {
+  position: relative;
+  font-size: 25px;
+  display: flex;
+}
+.tip_amount div span img {
+  position: relative;
+  font-size: 30px;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip_total .box-2 {
+  margin-left: 2px;
+}
+.color button {
+  display: block;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 60px auto 0 auto;
+  width: 80%;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 678px) {
+  body {
+    background: hsl(189, 41%, 84%);
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+  }
+  .container_small {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .white p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .white .input {
+    width: 100%;
+  }
+  .white,
+  .color {
+    width: 100%;
+  }
+  .color {
+    padding: 10px;
+    display: block;
+    position: relative;
+    left: -10px;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  .input {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+    height: 28px;
+  }
+  .input input {
+    position: relative;
+    right: 10px;
+  }
+  #tip_button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  .tip {
+    position: relative;
+    width: 110px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .color button {
+    margin: 30px auto 0 auto;
+  }
+  .tip:last-child {
+    width: 110px;
+    height: 36px;
+    position: relative;
+    /* right: 9px; */
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 372px) {
+  .tip {
+    width: 55px;
+  }
+}
